@@ -1,2 +1,3 @@
 import fs from 'fs';
-fs.writeFileSync('src/assets/hero.jpeg', Buffer.from('efbfbdefbfbdefbfbdefbfbd00104a46', 'hex'));
+const base64 = fs.readFileSync('src/assets/hero.jpeg', 'utf8');
+console.log(base64.substring(0, 100));
