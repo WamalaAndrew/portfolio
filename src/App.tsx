@@ -21,6 +21,10 @@ import {
   Newspaper
 } from 'lucide-react';
 
+import heroImg from './assets/hero.jpeg';
+import aboutImg from './assets/about.jpeg';
+import insightsImg from './assets/insights.jpeg';
+
 export default function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -106,7 +110,7 @@ export default function App() {
         <div className="flex-1 w-full max-w-md lg:max-w-none relative">
           <div className="absolute inset-0 bg-gray-100 translate-x-4 translate-y-4 -z-10"></div>
           <img 
-            src="/hero.jpeg" 
+            src={heroImg} 
             alt="Counsel Mwebaza Suzan Faridah" 
             className="w-full h-auto object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700 border border-gray-200"
             referrerPolicy="no-referrer"
@@ -161,7 +165,7 @@ export default function App() {
             <div className="aspect-square bg-gray-100 p-8 flex items-center justify-center">
                <div className="w-full h-full border border-gray-300 p-2">
                  <img 
-                    src="/about.jpeg" 
+                    src={aboutImg} 
                     alt="Lawyer presenting" 
                     className="w-full h-full object-cover grayscale-[30%]"
                     referrerPolicy="no-referrer"
@@ -368,7 +372,7 @@ export default function App() {
                 <div className="absolute top-4 left-4 bg-black text-white text-xs font-bold uppercase tracking-widest px-3 py-1 z-10 flex items-center gap-2">
                   <Newspaper className="w-4 h-4" /> Publication
                 </div>
-                <img src="/insights.jpeg" alt="Law Journal" className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" referrerPolicy="no-referrer" />
+                <img src={insightsImg} alt="Law Journal" className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" referrerPolicy="no-referrer" />
               </div>
               <h3 className="text-3xl font-bold tracking-tight mb-4 group-hover:underline underline-offset-4 leading-tight">The Evolving Landscape of Corporate Law in Uganda</h3>
               <p className="text-gray-600 mb-4">An analysis of recent amendments in the Companies Act and URSB regulations, and what these regulatory shifts mean for corporate governance and liability in East African businesses.</p>
