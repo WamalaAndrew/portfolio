@@ -15,6 +15,10 @@ export default defineConfig(({mode}) => {
         '@': path.resolve(__dirname, '.'),
       },
     },
+    build: {
+      // Force all assets to be inlined as base64 to avoid Vercel missing file issues
+      assetsInlineLimit: 100000000,
+    },
     server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
       // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
